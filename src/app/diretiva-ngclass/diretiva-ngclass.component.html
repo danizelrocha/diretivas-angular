@@ -1,0 +1,21 @@
+
+<h1>
+  <i class="glyphicon"
+  [class.glyphicon-star-empyt]="!meuFavorito"
+  [class.glyphicon-star]="meuFavorito"
+  (click)="onClick()"
+  ></i>
+</h1>
+
+<h1>
+  <i class="glyphicon"
+  [ngClass]="{
+    'glyphicon-star-empyt': !meuFavorito,
+    'glyphicon-star': meuFavorito
+  }"
+  (click)="onClick()"
+  ></i>
+</h1>
+
+
+Aula 29 ativar bootstrap.
